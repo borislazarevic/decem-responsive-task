@@ -68,6 +68,7 @@ nav ul li a {
 .nav_icon_photo {
   margin-left: 33px;
 }
+/** Navigation end **/
 
 /** Header **/
 header {
@@ -215,6 +216,7 @@ span {
   margin-left: 5px;
   font-family: Helvetica;
 }
+/** Header end **/
 
 /** Trending **/
 main {
@@ -275,6 +277,7 @@ div .main_slider_card:nth-child(3) {
   font-size: 13px;
   padding: 4px 0 7px 0;
 }
+/** Trending end **/
 
 /** Cards **/
 .card_wrapper {
@@ -350,6 +353,7 @@ div .small_card:nth-child(2) {
 .span_text span {
   text-decoration: underline;
 }
+/** Cards end **/
 
 /** Footer **/
 footer {
@@ -418,4 +422,31 @@ div.footer_wrapper:nth-child(2) p {
 
 div.footer_wrapper:nth-child(3) a {
   margin-left: 20px;
+}
+/** Footer end **/
+
+/** Breakpoints **/
+
+/** Desktop breakpoint 1440px - 1799px **/
+@media screen and (min-width: 1400px) and (max-width: 1799px) {
+  /** Header Start **/
+  header {
+    background-color: var(--backgroundColor);
+  }
+  .header_image {
+    margin-right: 10px;
+  }
+  .header_headline_wrapper {
+    padding: 88px 134px 124px 160px;
+  }
+  .slider_card {
+    padding: 49px 71px 51px 40px;
+  }
+  /** Header End **/
+
+  /** Trending Start **/
+  .container {
+    padding: 0 70px;
+  }
+  /** Trending End **/
 }
