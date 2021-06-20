@@ -7,6 +7,7 @@
   --textColor2: #202124;
   --textColorLight: #a6adb4;
   --hrColor: #ebeded;
+  --footerTextColor: #cbd0d3;
 }
 
 /** Basic style **/
@@ -15,6 +16,15 @@
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/** Global style **/
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /** Navigation **/
@@ -39,14 +49,12 @@ nav {
 nav ul {
   display: flex;
   align-items: center;
-  list-style: none;
 }
 
 nav ul li a {
   color: var(--textColor);
   font-size: 11;
   font-weight: bold;
-  text-decoration: none;
   text-transform: uppercase;
   opacity: 0.5;
   margin-right: 13px;
@@ -211,14 +219,13 @@ span {
 /** Trending **/
 main {
   background-color: var(--backgroundColor);
-  /* background-color: yellow; */
-  height: 1400px;
+  height: auto;
   width: 100%;
+  padding-bottom: 52px;
 }
 
 .container {
   padding: 0 160px;
-  height: 410px;
 }
 
 .slider_title {
@@ -342,4 +349,73 @@ div .small_card:nth-child(2) {
 
 .span_text span {
   text-decoration: underline;
+}
+
+/** Footer **/
+footer {
+  height: 200px;
+  background-color: var(--textColorLight);
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_wrapper {
+  padding: 29px 0 31px;
+}
+
+div.footer_wrapper:first-child {
+  display: flex;
+}
+
+div.footer_wrapper:first-child .logo {
+  color: var(--white);
+  margin-right: 33px;
+}
+
+div.footer_wrapper:first-child li {
+  margin-right: 33px;
+  margin-bottom: 6px;
+}
+
+div.footer_wrapper:first-child a {
+  color: var(--footerTextColor);
+  font-size: 13px;
+}
+
+.footer_wrapper input[type='email'] {
+  background-color: transparent;
+  border-radius: 6px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  color: var(--white);
+  margin-bottom: 7px;
+  height: 40px;
+  width: 260px;
+  padding-left: 10px;
+  outline: none;
+}
+
+::placeholder {
+  color: var(--footerTextColor);
+  padding: 6px 0 8px;
+  opacity: 0.5;
+  font-size: 13px;
+}
+
+div.footer_wrapper:nth-child(2) span {
+  position: relative;
+}
+
+div.footer_wrapper:nth-child(2) span img {
+  position: absolute;
+  right: 15px;
+  top: 1px;
+}
+
+div.footer_wrapper:nth-child(2) p {
+  font-size: 11px;
+  color: var(--footerTextColor);
+}
+
+div.footer_wrapper:nth-child(3) a {
+  margin-left: 20px;
 }
