@@ -428,7 +428,7 @@ div.footer_wrapper:nth-child(3) a {
 /** Breakpoints **/
 
 /** Desktop breakpoint 1440px - 1799px **/
-@media screen and (min-width: 1400px) and (max-width: 1799px) {
+@media screen and (max-width: 1400px) {
   /** Header Start **/
   header {
     background-color: var(--backgroundColor);
