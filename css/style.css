@@ -54,6 +54,10 @@ nav ul {
   align-items: center;
 }
 
+nav ul li span {
+  display: none;
+}
+
 nav ul li a {
   color: var(--textColor);
   font-size: 11;
@@ -61,6 +65,10 @@ nav ul li a {
   text-transform: uppercase;
   opacity: 0.5;
   margin-right: 22px;
+}
+
+nav ul li a.profile {
+  display: none;
 }
 
 .active {
@@ -71,6 +79,7 @@ nav ul li a {
 .nav_icon_photo {
   margin: 10px 20px 10px 40px;
 }
+
 /** Navigation end **/
 
 /** Header **/
@@ -446,6 +455,7 @@ div.footer_wrapper:nth-child(3) a {
   .burger_menu {
     display: none;
   }
+
   /** Navigation end **/
 
   /** Header **/
@@ -599,7 +609,7 @@ div.footer_wrapper:nth-child(3) a {
   }
 
   div.footer_wrapper:first-child .logo {
-    margin-right: 145px;
+    margin-right: auto;
   }
 
   div.footer_wrapper:first-child ul {
@@ -630,18 +640,65 @@ div.footer_wrapper:nth-child(3) a {
   .burger_menu {
     display: block;
   }
+
   .logo {
     color: var(--textColorLight);
+    font-size: 13px;
   }
+
   nav {
     padding: 16px;
   }
-  nav ul li a {
-    display: none;
+
+  nav ul {
+    position: fixed;
+    left: 0px;
+    top: 50px;
+    z-index: 1;
+    height: 420px;
+    background: var(--backgroundColor);
+    width: 287px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+    transform: translateX(-287px);
+    transition: 0.7s ease-in-out;
   }
+  .nav_active {
+    transform: translateX(0);
+  }
+
+  nav ul li span {
+    display: inline-block;
+    margin-left: 40px;
+  }
+  nav ul li a {
+    font-size: 11px;
+    margin-right: 0;
+    margin-left: 30px;
+    margin-bottom: 40px;
+  }
+
+  nav ul li a.profile {
+    display: inline-block;
+    margin-left: 0;
+  }
+
+  .active {
+    opacity: 1;
+    margin-right: 0;
+    margin-left: 30px;
+  }
+
+  .nav_icon_photo {
+    margin: 0 30px 0 40px;
+  }
+
   .nav_icon_photo {
     height: 16px;
     width: 16px;
+    padding-right: 0;
   }
   /** Navigation end **/
 
@@ -753,8 +810,54 @@ div.footer_wrapper:nth-child(3) a {
   /** Cards end **/
 
   /** Footer **/
+
   footer {
     display: none;
+    height: 155px;
+    width: 287px;
+    position: relative;
+    top: 420px;
+    left: 0;
+    /* transition: 0.7s ease-in-out; */
+    /* transform: translateX(-287px); */
+  }
+
+  /* .footer_active {
+    transform: translateX(0);
+  } */
+
+  div.footer_wrapper:first-child {
+    padding: 0;
+  }
+  div.footer_wrapper:first-child ul {
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 10px;
+  }
+
+  div.footer_wrapper:first-child .logo {
+    display: none;
+  }
+
+  div.footer_wrapper:first-child ul:nth-child(2) {
+    display: none;
+  }
+  div.footer_wrapper:first-child ul:nth-child(3) {
+    padding-right: 70px;
+    padding-left: 17px;
+    padding-bottom: 11px;
+  }
+
+  div.footer_wrapper:nth-child(2) {
+    display: none;
+  }
+  div.footer_wrapper:nth-child(3) {
+    padding: 0px 0 20px 0;
+  }
+
+  div.footer_wrapper:nth-child(3) a {
+    top: 0;
+    margin-right: 20px;
   }
   /** Footer end **/
 }
