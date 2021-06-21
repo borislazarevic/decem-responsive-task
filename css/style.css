@@ -91,7 +91,7 @@ header {
 }
 
 .header_image {
-  background-image: url(/images/img/header_image.png);
+  background-image: url(../images/img/header_image.png);
   background-position: center;
   background-size: cover;
   color: var(--white);
@@ -319,7 +319,7 @@ div .main_slider_card:nth-child(3) {
 }
 
 .large_card.one {
-  background-image: url(/images/cards/large_img_1.png);
+  background-image: url(../images/cards/large_img_1.png);
   background-size: cover;
   background-position: center;
   height: 430px;
@@ -327,7 +327,7 @@ div .main_slider_card:nth-child(3) {
 }
 
 .large_card.two {
-  background-image: url(/images/cards/large_img_2.png);
+  background-image: url(../images/cards/large_img_2.png);
   background-size: cover;
   background-position: center;
   height: 430px;
